@@ -29,6 +29,7 @@ import {
   selectImages,
   selectImagesLoading,
 } from '../services/ImageEditor/selectors';
+import ImgixLogo from '../../assets/imgix.svg';
 
 // @own
 import './styles.scss';
@@ -376,10 +377,8 @@ const ImageEditor = () => {
 
   return (
     <div className="image-editor">
-      <FullScreenHeader>
-        <div className="image-editor__toolbar">
-          <ActionsList actions={actions} />
-        </div>
+      <FullScreenHeader className="image-editor__header">
+        <img className="image-editor__logo" src={ImgixLogo} />
       </FullScreenHeader>
       <MainContent className="image-editor__main-content">
         {!loadingImages && images.length ? (

@@ -32,4 +32,13 @@
     display: flex;
     justify-content: center;
   }
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
 }
