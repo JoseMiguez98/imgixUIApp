@@ -1,0 +1,18 @@
+@import '../../../styles/theme.scss';
+
+.imgix-wrapper {
+  align-items: center;
+  display: flex;
+  position: relative;
+  min-height: 615px;
+
+  &__title {
+    background: rgba($bg-primary-dark, .7);
+    font-family: $font-header;
+    position: absolute;
+    top: 0;
+    width: 99%;
+    color: $text-primary;
+    padding: 5px 0 5px 10px;
+  }
+}

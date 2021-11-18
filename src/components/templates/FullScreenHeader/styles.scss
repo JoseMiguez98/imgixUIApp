@@ -1,0 +1,9 @@
+@import '../../../styles/theme.scss';
+
+.fullscreen-header {
+  background: $bg-primary;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+}

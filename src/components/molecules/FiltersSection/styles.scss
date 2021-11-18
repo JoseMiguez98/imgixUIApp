@@ -1,0 +1,39 @@
+@import '../../../styles/theme.scss';
+
+.filters-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__title {
+    border-bottom: 1px solid $bg-primary-light;
+    font-family: $font-header;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin: 0 30px 30px 0;
+    width: 200px;
+
+    &-label {
+      text-transform: capitalize;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    &:last-child {
+      margin-right:  0;
+    }
+  }
+}

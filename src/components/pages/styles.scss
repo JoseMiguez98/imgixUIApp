@@ -1,0 +1,35 @@
+@import '../../styles/theme.scss';
+
+.image-editor {
+  display: flex;
+  flex-flow: row wrap;
+
+  &__toolbar {
+    width: 30%;
+  }
+
+  &__imgix {
+    width: 100%;
+  }
+
+  &__main-content {
+    flex: 1;
+  }
+
+  &__side-content {
+    flex: 1;
+  }
+
+  &__image-actions-list {
+    justify-content: flex-end;
+  }
+
+  &__image-actions-button {
+    color: $text-secondary;
+  }
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+  }
+}

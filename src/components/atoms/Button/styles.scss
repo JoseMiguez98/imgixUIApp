@@ -1,0 +1,36 @@
+@import '../../../styles/theme.scss';
+
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: $font-text;
+
+  &--size-small {
+    font-size: 10px;
+    padding: 5px 14px 4px 14px;
+  }
+
+  &--size-medium {
+    font-size: 12px;
+    padding: 7px 25px;
+  }
+
+  &--size-large {
+    font-size: 16px;
+    padding: 11px 35px;
+  }
+
+  &--color-primary {
+    background: $bg-primary;
+    color: $text-primary;
+
+    &:hover {
+      color: $text-primary-hover;
+    }
+  }
+
+  &--color-secondary {
+    background: $bg-secondary;
+    color: $text-secondary;
+  }
+}
