@@ -11,8 +11,9 @@ import './styles.scss';
 
 const ActionsList = ({ actions, actionsClassName, className }) => (
   <div className={cn('actions-list', className)}>
-    {actions.map(({name, ...rest}) => (
+    {actions.map(({name, ...rest}, key) => (
       <Button
+        key={`action${key}`}
         className={cn('actions-list__button', actionsClassName)}
         size="large"
         color ="primary"

@@ -9,7 +9,6 @@ import { getImages } from './api';
 function* imageEditorWorker() {
   try {
     const response = yield call(getImages);
-    console.log(response)
     yield put(getImagesSuccess(response));
   } catch(error) {
     yield put(getImagesFail(error.message));
